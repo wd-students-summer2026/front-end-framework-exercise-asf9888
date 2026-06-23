@@ -1,0 +1,88 @@
+body {
+    font-family:Verdana, sans-serif;
+    background-color:rgb(252, 250, 223);
+    color: rgb(35,70,35);
+    margin: 0;
+}
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;  
+}
+.site-header {
+    background-color: rgb(255,222,173);
+    border: 5px double rgb(23,121,29);
+}
+.brand-link {
+    color: rgb(23,121, 29);
+    font-family: Georgia, serif;
+}
+.brand-link:hover {
+    color: rgb(206,48,143);
+}
+.nav-link {
+    color: salmon;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: rgb(206,48,143);
+}
+.hero-card,
+.info-card,
+.product-card,
+.learn-card,
+.carousel-card {
+    background-color: rgb(255, 253, 227);
+    border: 4px double rgb(23,121,29);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+.product-card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    background-color: white;
+}
+.accent-button {
+    background-color: salmon;
+}
+.accent-button:hover {
+    background-color: rgb(206,48,143);
+}
+.green-button {
+    background-color: rgb(23,121,29);
+    color: white;
+}
+.green-button:hover {
+    background-color: rgb(85,166,22);
+}
+.accent-button,
+.green-button {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.accent-button:hover,
+.green-button:hover {
+    transform: scale(1.03);
+}
+.feature-icon {
+    background-color: rgb(255,177,173);
+    border: 3px double rgb(206,48,143);
+}
+.footer-area {
+    background-color: rgb(255,222,173);
+    border: 5px double rgb(23,121,29);
+    text-align: center;
+}
+.carousel-image {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border: 9px double rgba(206,48,143,0.703);
+    border-radius: 20px;
+}

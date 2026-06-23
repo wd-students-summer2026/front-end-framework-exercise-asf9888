@@ -1,2 +1,70 @@
-<!-- insert your HTML code here -->
-<!-- don't forget to make two other HTML documents also -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Food Hydroponics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="max-w-6xl mx-auto px-6 py-6">
+<nav x-data="{ open:false }"
+     class="site-header p-4 rounded-lg">
+     <div class="flex justify-between items-center">
+        <a href="professional_site.html" class="brand-link font-bold text-2xl">
+            Infinite Food
+        </a>
+        <button @click="open=!open" 
+            class="md:hidden text-3xl">
+            ☰
+        </button>
+        <div class="hidden md:flex gap-6">
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="learn.html" class="nav-link">Learning Center</a>
+        </div>
+    </div>
+    <div
+        x-show="open"
+        class="flex flex-col mt-4 md:hidden">
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="learn.html" class="nav-link">Learning Center</a>
+    </div>
+</nav>
+<header class="text-center py-12">
+     <h1 class="text-4xl md:text-6xl font-bold">
+        Grow Fresh Food Anywhere
+     </h1>
+     <p class="mt-4 text-lg">
+             Smart hydroponic systems available for every home.
+     </p>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="info-card bg-white p-6 rounded-xl shadow">
+        <h2 class="text-2xl font-bold">Smart Monitoring</h2>
+        <p>Optimized lighting for healthy growth year-round.</p>
+    </div>
+    <div class="info-card bg-white p-6 rounded-xl shadow">
+        <h2 class="text-2xl font-bold">Easy Maintenance</h2>
+        <p>Simple filtration and reservoir systems.</p>
+    </div>
+    <div class="info-card bg-white p-6 rounded-xl shadow">
+         <h2 class="text-2xl font-bold">Space Saving</h2>
+         <p>Designed to fit beautifully in kitchens, apartments, and small homes.</p>
+    </div>
+</section>
+<footer class="footer-area text-center rounded-xl p-6 mt-10">
+    <h3 class="text-xl font-bold">
+        &copy; Infinite Food
+    </h3>
+    <p>
+        Smart indoor hydroponic growing systems.
+    </p>
+    <p class="mt-4 text-sm">
+        Website designed by Aden Fischoff
+    </p>
+</footer>
+</div>
+</body>
+</html>

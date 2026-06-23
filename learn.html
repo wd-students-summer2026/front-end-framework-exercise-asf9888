@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Learning Center
+        </title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer src="https://unpkg.com/alpinejs"></script>
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body class="bg-green-50">
+        <div class="max-w-6xl mx-auto px-6 py-6">
+            <nav x-data="{ open:false }"
+                class="site-header p-4 rounded-lg">
+                <div class="flex justify-between">
+                     <a href="professional_site.html" class="brand-link font-bold text-2xl">
+                     Infinite Food
+                    </a>
+                    <button @click="open=!open" 
+                    class="md:hidden">
+                    ☰
+                    </button>
+                    <div class="hidden md:flex gap-6">
+                         <a href="products.html" class="nav-link">Products</a>
+                         <a href="learn.html" class="nav-link">Learning Center</a>
+                    </div>
+                </div>
+                <div x-show="open" class="md:hidden flex flex-col mt-3">
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="learn.html" class="nav-link">Learning Center</a>
+                </div>
+            </nav>
+            <section class="py-10">
+                <h1 class="text-4xl font-bold text-center mb-8">
+                    Learning Center
+                </h1>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow">
+                         <h2 class="text-2xl font-bold">
+                            Choosing Plants
+                         </h2>
+                         <p>
+                            Lettuce, basil, and herbs are excellent beginner crops.
+                         </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">                          
+                            <h2 class="text-2xl font-bold">
+                                Nutrient Management
+                            </h2>
+                        <p>
+                            Regular monitoring helps maximize growth and yield.     
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <h2 class="text-2xl font-bold">
+                             Lighting Tips
+                        </h2>
+                        <p>
+                            Most vegetables require 12–16 hours of light daily.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-area text-center rounded-xl p-6 mt-10">
+                <h3 class="text-xl font-bold">
+                    &copy; Infinite Food
+                 </h3>
+                 <p>
+                    Smart indoor hydroponic growing systems.
+                </p>
+                <p class="mt-4 text-sm">
+                    Website designed by Aden Fischoff
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
